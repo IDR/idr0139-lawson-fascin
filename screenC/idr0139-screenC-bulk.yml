@@ -1,0 +1,4 @@
+---
+target: "Screen:name:idr0139-lawson-fascin/screenC"
+include: "../bulk.yml"
+path: "idr0139-screenC-plates.tsv"

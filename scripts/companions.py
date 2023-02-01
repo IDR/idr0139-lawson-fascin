@@ -5,10 +5,13 @@ from ome_model.experimental import Plate, Image, create_companion
 # Create companion files for screenC
 
 # 1093670866WT2_A10_F01_T002_C1_Z01.tif
+# 1093670873WT1_A10_F01_T000_C0_Z01.tif
+# 1093670842KD2_A10_F01_T001_C0_Z01.tif
+# 1093670859KD1_A10_F01_T002_C2_Z01.tif
 pat = re.compile(r".+_(?P<row>\D{1})(?P<col>\d{1,2})_F(?P<field>\d{2})_T(?P<t>\d{3})_C(?P<c>\d{1})_Z(?P<z>\d{2})\.tif")
 
-plate_name = '1093670866'
-file_list = '1093670866_files.txt'
+plate_name = '1093670859' # 1093670873  1093670842  1093670859
+file_list = '1093670859_files.txt'
 order = "XYCZT"
 img_x = 1392
 img_y = 1040
@@ -28,7 +31,7 @@ n_fields = set()
 n_z = set()
 n_t = set()
 n_c = set()
-for file in files:
+for i, file in enumerate(files):
     m = pat.match(file).groupdict()
     n_rows.add(m['row'])
     n_cols.add(int(m['col']))

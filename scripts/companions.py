@@ -8,10 +8,10 @@ from ome_model.experimental import Plate, Image, create_companion
 # 1093670873WT1_A10_F01_T000_C0_Z01.tif
 # 1093670842KD2_A10_F01_T001_C0_Z01.tif
 # 1093670859KD1_A10_F01_T002_C2_Z01.tif
-pat = re.compile(r".+_(?P<row>\D{1})(?P<col>\d{1,2})_F(?P<field>\d{2})_T(?P<t>\d{3})_C(?P<c>\d{1})_Z(?P<z>\d{2})\.tif")
-
-plate_name = '1093670859' # 1093670873  1093670842  1093670859
-file_list = '1093670859_files.txt'
+pat = re.compile(r"\d+KD2_(?P<row>\D{1})(?P<col>\d{1,2})_F(?P<field>\d{2})_T(?P<t>\d{3})_C(?P<c>\d{1})_Z(?P<z>\d{2})\.tif")
+                   # WT2 WT1 KD2 KD1
+plate_name = '1093670842' # 1093670873  1093670842  1093670859
+file_list = '1093670842_files.txt'
 order = "XYCZT"
 img_x = 1392
 img_y = 1040
@@ -21,7 +21,9 @@ pix_type = "uint8"
 files = []
 with open(file_list, 'r') as read:
     for line in read.readlines():
-        files.append(line.strip())
+        line = line.strip()
+        if pat.match(line):
+            files.append(line.strip())
 
 
 # Get total numbers

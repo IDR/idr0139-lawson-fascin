@@ -1,0 +1,146 @@
+---
+name: idr0139-lawson-fascin/screenA
+version: 1
+
+defaults:
+  include: false
+  type: string
+  includeclient: true
+  visible: true
+  omitempty: true
+
+columns:
+
+  - name: Proprietary Compound
+    clientname: Proprietary Compound
+    include: true
+
+  - name: Control Type
+    clientname: Control Type
+    include: true
+
+  - name: Comment [Control Type Comments]
+    clientname: Control Type Comments
+    include: true
+
+  - name: Quality Control
+    clientname: Quality Control
+    include: true
+
+  - name: Channels
+    clientname: Channels
+    include: true
+
+  - name: Score
+    clientname: Score
+    include: true
+
+  - name: In Validation Screen
+    clientname: In Validation Screen
+    include: true
+
+  - name: Has Phenotype
+    clientname: Has Phenotype
+    include: true
+
+  - name: Phenoptye Annotation Level
+    clientname: Phenoptye Annotation Level
+    include: true
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/cell_line
+      columns:
+        - name: Characteristics [Cell Line]
+          clientname: Cell Line
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/compound
+      columns:
+        - name: Compound Name
+          clientname: Compound Name
+          include: true
+        - name: Compound PubChem CID
+          clientname: Compound Name URL
+          clientvalue: >
+            https://pubchem.ncbi.nlm.nih.gov/compound/{{ value|urlencode }}
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/compound/supplementary
+      columns:
+        - name: Compound PubChem CID
+          clientname: PubChem CID
+          include: true
+        - name: Compound InChIKey
+          clientname: InChIKey
+          include: true
+        - name: Compound SMILES
+          clientname: SMILES
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+      - name: Comment [Gene Identifier]
+        clientname: Gene Identifier
+        include: yes
+      - name: Comment [Gene Identifier]
+        clientname: Gene Identifier URL
+        clientvalue: https://www.ncbi.nlm.nih.gov/nuccore/{{ value|urlencode }}
+        include: yes
+      - name: Comment [Gene Symbol]
+        clientname: Gene Symbol
+        include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/phenotype
+      columns:
+      - name: Phenotype
+        clientname: Phenotype
+        include: yes
+      - name: Phenotype Term Name
+        clientname: Phenotype Term Name
+        include: yes
+      - name: Phenotype Term Accession
+        clientname: Phenotype Term Accession
+        include: yes
+      - name: Phenotype Term Accession
+        clientname: Phenotype Term Accession URL
+        clientvalue: http://purl.obolibrary.org/obo/{{ value|urlencode }}
+        include: yes
+
+
+advanced:
+  well_to_images: true
+  ignore_missing_primary_key: true
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+        - Cell Line
+    - namespace: openmicroscopy.org/mapr/compound
+      keys:
+        - Compound Name
+        - Compound Name URL
+    - namespace: openmicroscopy.org/mapr/gene
+      keys:
+        - Gene Identifier
+        - Gene Symbol
+    - namespace: openmicroscopy.org/mapr/phenotype
+      keys:
+        - Phenotype

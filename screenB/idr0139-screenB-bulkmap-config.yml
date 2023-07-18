@@ -15,12 +15,16 @@ columns:
     clientname: Proprietary Compound
     include: true
 
-  - name: Compound Concentration (microMolar)
-    clientname: Compound Concentration (microMolar)
+  - name: Proprietary Compound Concentration (microMolar)
+    clientname: Proprietary Compound Concentration (microMolar)
     include: true
 
   - name: Control Type
     clientname: Control Type
+    include: true
+
+  - name: Comment [Control Type Comments]
+    clientname: Control Type Comments
     include: true
 
   - name: Quality Control
@@ -79,6 +83,31 @@ columns:
           include: true
 
   - group:
+      namespace: openmicroscopy.org/mapr/compound
+      columns:
+        - name: Compound Name
+          clientname: Compound Name
+          include: true
+        - name: Compound PubChem CID
+          clientname: Compound Name URL
+          clientvalue: >
+            https://pubchem.ncbi.nlm.nih.gov/compound/{{ value|urlencode }}
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/compound/supplementary
+      columns:
+        - name: Compound PubChem CID
+          clientname: PubChem CID
+          include: true
+        - name: Compound InChIKey
+          clientname: InChIKey
+          include: true
+        - name: Compound SMILES
+          clientname: SMILES
+          include: true
+
+  - group:
       namespace: openmicroscopy.org/mapr/gene
       columns:
       - name: Comment [Gene Identifier]
@@ -86,7 +115,7 @@ columns:
         include: yes
       - name: Comment [Gene Identifier]
         clientname: Gene Identifier URL
-        clientvalue: https://www.ncbi.nlm.nih.gov/nuccore/{{ value|urlencode }}
+        clientvalue: https://www.ncbi.nlm.nih.gov/gene/{{ value|urlencode }}
         include: yes
       - name: Comment [Gene Symbol]
         clientname: Gene Symbol
@@ -137,6 +166,10 @@ advanced:
     - namespace: openmicroscopy.org/mapr/cell_line
       keys:
         - Cell Line
+    - namespace: openmicroscopy.org/mapr/compound
+      keys:
+        - Compound Name
+        - Compound Name URL
     - namespace: openmicroscopy.org/mapr/gene
       keys:
         - Gene Identifier

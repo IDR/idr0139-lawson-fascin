@@ -99,7 +99,7 @@ columns:
         include: yes
       - name: Comment [Gene Identifier]
         clientname: Gene Identifier URL
-        clientvalue: https://www.ncbi.nlm.nih.gov/nuccore/{{ value|urlencode }}
+        clientvalue: https://www.ncbi.nlm.nih.gov/gene/{{ value|urlencode }}
         include: yes
       - name: Comment [Gene Symbol]
         clientname: Gene Symbol

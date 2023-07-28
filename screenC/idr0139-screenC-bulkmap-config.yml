@@ -65,9 +65,9 @@ columns:
   - group:
       namespace: openmicroscopy.org/mapr/cell_line/supplementary
       columns:
-      - name: Comment [Cell Line]
-        clientname: Cell Line Comment
-        include: yes
+        - name: Comment [Cell Line]
+          clientname: Cell Line Comment
+          include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/compound

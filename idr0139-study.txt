@@ -1,0 +1,253 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.						
+# STUDY DESCRIPTION SECTION												
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details											
+												
+Comment[IDR Study Accession]	idr0139											
+Study Title	Nuclear fascin regulates cancer cell survival											
+Study Type	high content screen											
+Study Type Term Source REF	EFO											
+Study Type Term Accession	EFO_0007550											
+Study Description	Fascin is an important regulator of F-actin bundling leading to enhanced filopodia assembly. Fascin is also overexpressed in most solid tumours where it supports invasion through control of F-actin structures at the periphery and nuclear envelope. Recently fascin has been identified in the nucleus of a broad range of cell types but the contributions of nuclear fascin to cancer cell behaviour remain unknown. Here we demonstrate that fascin bundles F-actin within the nucleus to support chromatin organisation and efficient DNA damage response. Fascin associates directly with phosphorylated Histone H3 leading to regulated levels of nuclear fascin to support these phenotypes. Forcing nuclear fascin accumulation through the expression of nuclear-targeted fascin-specific nanobodies or inhibition of Histone H3 kinases results in enhanced and sustained nuclear F-actin bundling leading to reduced invasion, viability and nuclear fascin-specific/driven apoptosis. These findings represent an additional important route through which fascin can support tumorigenesis and provide insight into potential pathways for targeted fascin-dependent cancer cell killing.											
+Study Key Words	Fascin	actin	nucleus	nuclear F-actin	HeLa	cancer											
+Study Organism	Homo sapiens											
+Study Organism Term Source REF	NCBITaxon											
+Study Organism Term Accession	9606												
+Study Screens Number	3											
+Study External URL	
+Study BioImage Archive Accession											
+Study Public Release Date	2023-08-17												
+												
+# Study Publication												
+Study PubMed ID	36039640										
+Study Publication Title	Nuclear fascin regulates cancer cell survival											
+Study Author List	Lawson CD, Peel S, Jayo A, Corrigan A, Iyer P, Baxter Dalrymple M, Marsh RJ, Cox S, Van Audenhove I, Gettemans J, Parsons M											
+Study PMC ID	PMC9427113											
+Study DOI	https://doi.org/10.7554/eLife.79283											
+												
+# Study Contacts												
+Study Person Last Name	Parsons	Lawson										
+Study Person First Name	Maddy	Campbell										
+Study Person Email	maddy.parsons@kcl.ac.uk	campbell.lawson@kcl.ac.uk										
+Study Person Address	Randall Centre for Cell and Molecular Biophysics, King’s College London, Guy’s Campus, London, SE1 1UL, United Kingdom	Randall Centre for Cell and Molecular Biophysics, King’s College London, Guy’s Campus, London, SE1 1UL, United Kingdom										
+Study Person ORCID	0000-0002-2021-8379	0000-0001-5349-0638										
+Study Person Roles	submitter	submitter										
+												
+# Study License and Data DOI												
+Study License	CC BY 4.0											
+Study License URL	https://creativecommons.org/licenses/by/4.0/												
+Study Copyright	Lawson et al											
+Study Data Publisher	University of Dundee											
+Study Data DOI												
+												
+Term Source Name	NCBITaxon	EFO	CMPO	Fbbi								
+Term Source File	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/								
+												
+												
+# SCREEN SECTION												
+# Screen Section containing all information relative to each screen in the study including materials used, protocols names and description, phenotype names and description.	
+# For multiple screens this section should be repeated.  Copy and paste the whole section below and fill out for the next screen.												
+												
+Screen Number	1											
+Comment[IDR Screen Name]	idr0139-lawson-fascin/screenA	
+Screen Sample Type	cell										
+Screen Description	To explore the pathways controlling nuclear fascin, we performed unbiased, imaging-based high-content phenotypic screening using fascin KD cells expressing mScarlet-fascin and the nuclear F-actin probe iRFP-nAC. Cells were treated with a library of ~13,000 annotated compounds, targeting multiple signalling pathways, at a single concentration (5 µm) or neutral or positive (leptomycin B) controls for 24 h, followed by fixation and imaging using high content spinning disk confocal microscopy. Resulting data were analysed using automated pipelines to define levels of nuclear fascin normalised to neutral and positive controls. The mean RZ’ of the neutral and positive controls in this screen was 0.5017, indicating excellent assay robustness. This approach identified compounds with a range of activities including those that increased or decreased nuclear fascin relative to the neutral controls. We chose to focus on those that increased nuclear fascin and identified hits based on a minimum threshold value of 30% of the neutral controls, equivalent to 3x the standard deviation of the neutral controls. Following quality control checks (e.g., to exclude images with very few cells), 231 compounds were identified as hits.											
+Screen Size	Plates: 384	5D Images: 61,600	Planes: 246,400	Average Image Dimension (XYZCT): 996 x 996 x 1 x 4 x 1	Total Tb: 							
+Screen Example Images												
+Screen Imaging Method	spinning disk confocal microscopy											
+Screen Imaging Method Term Source REF	Fbbi											
+Screen Imaging Method Term Accession	FBbi_00000253											
+Screen Technology Type	compound screen											
+Screen Technology Type Term Source REF	EFO										
+Screen Technology Type Term Accession	EFO_0007553										
+Screen Type	primary screen											
+Screen Type Term Source REF	EFO										
+Screen Type Term Accession	EFO_0007556											
+Screen Comments												
+												
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)											
+Library File Name	idr0139-screenA-annotation											
+Library File Format	tab-delimited text											
+Library Type	compound library											
+Library Type Term Source REF	EFO											
+Library Type Term Accession	EFO_0007569										
+Library Manufacturer	AstraZeneca											
+Library Version												
+Library Experimental Conditions												
+Library Experimental Conditions Term Source REF	EFO											
+Library Experimental Conditions Term Accession												
+Quality Control Description	Wells with <5 imaged cells were excluded. Fluorescent compounds were automatically detected and excluded based on nuclear/cytoplasmic intensity/size. Wells with nuclear fascin >30% were manually reviewed to validate the presence of nuclear fascin within the population. Wells with very few cells or excessive numbers of dead (small/rounded) cells were excluded. 											
+												
+# Protocols												
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol							
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol							
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO							
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573							
+Protocol Description	Fascin was stably knocked down in HeLa cells, then mScarlet-fascin was stably re-expressed at physiological levels. mScarlet-fascin/fascin KD HeLa cells were cultured at 37°C, 5% CO2 in high-glucose DMEM supplemented with 10% FBS, 1% glutamine and 1% penicillin/streptomycin. Cells were selected and maintained using puromycin, and sub-cultured using 0.05% trypsin-EDTA in PBS. In this assay, mScarlet-fascin/fascin KD HeLa cells were transfected with the nuclear actin probe iRFP-nAC, then plated in CellCarrier Ultra 384 well plates (PerkinElmer) at a concentration of 4,400 cells/well. 	24 h after transfection, 10 nM leptomycin b (positive control), vehicle control or 5 µM library compounds were added using an Echo liquid handler (Labcyte/Beckman Coulter). Cells were incubated for a further 24 h then fixed in 4% paraformaldehyde. 	Library of biologically annotated compounds.	Cells were stained with DAPI and Alexa Fluor 488 Phalloidin then imaged using a 20x objective on a CellVoyager CV8000 High-Content Screening System (Yokogawa). Images were analysed using Columbus (PerkinElmer) and Genedata Screener (Genedata) software.	Images were analysed using automated pipelines to define levels of nuclear fascin normalised to neutral and positive controls. The nuclear and cytoplasmic compartments were determined using Columbus software (PerkinElmer) and the intensity of mScarlet-fascin in each comparment used to determine the % of nuclear-localized fascin per cell. The mean % nuclear fascin/cell/well was then calculated and values normalised relative to neutral controls (median set to 0) and positive controls (median set to 100). Hits were identified based on a normalised % nuclear fascin/cell/well of >30% of the neutral controls (equivalent to 3x the standard deviation of the neutral controls).							
+												
+												
+# Phenotypes												
+Phenotype Name	Nuclear fascin localization 											
+Phenotype Description	The mean % nuclear fascin/cell/well was calculated and values normalised relative to neutral controls (median set to 0) and positive controls (median set to 100). Hits were identified based on a normalised % nuclear fascin/cell/well of >30% of the neutral controls (equivalent to 3x the standard deviation of the neutral controls).											
+Phenotype Score Type	Automatic											
+Phenotype Term Source REF	GO											
+Phenotype Term Name	regulation of protein localization to nucleus											
+Phenotype Term Accession	GO_1900180											
+												
+# Raw Data Files												
+Raw Image Data Format	TIFF											
+Raw Image Organization	50x 384 well plates, 4 fields per well, 4 channels per field											
+												
+# Feature Level Data Files												
+Feature Level Data File Name												
+Feature Level Data File Description												
+Feature Level Data File Format												
+Feature Level Data Column Name												
+Feature Level Data Column Description												
+												
+#  Processed Data Files 												
+Processed Data File Name	idr0139-screenA-annotation											
+Processed Data File Format	tab-delimited text											
+Processed Data File Description	Primary screen - nuclear fascin											
+Processed Data Column Name	Plate	Well	Reagent Identifier	Gene Identifier	Gene Symbol	Score	In Validation Screen	Has Phenotype	Phenotype 1			
+Processed Data Column Type	Plate	Well	Reagent Identifier	Gene Identifier	Gene Symbol	Data	Phenotype	Phenotype	Phenotype			
+Processed Data Column Annotation Level						well	well	well	well			
+Processed Data Column Description						Nuclear fascin - normalised mean nuclear fascin/cell/well	Selected for compound response screen	Nuclear fascin >30%	Nuclear fascin >30%			
+Processed Data Column Link To Library File	Plate_Well combination											
+												
+												
+Screen Number	2											
+Comment[IDR Screen Name]	idr0139-lawson-fascin/screenB
+Screen Sample Type	cell											
+Screen Description	Compound response screen. 231 compounds identified as hits in primary screen were added to fascin KD cells expressing mScarlet-fascin and the nuclear F-actin probe iRFP-nAC, at 12 different concentrations. Assay conditions were otherwise identical to the primary screen. The mean RZ’ of the neutral and positive controls in this screen was 0.5607, indicating excellent assay robustness. Nuclear fascin and nuclear F-actin were plotted as a function of compound concentration to identify AC50 values for each compound. This compound response analysis identified 96 compounds that were active against nuclear fascin, of which 43 also increased nuclear F-actin.											
+Screen Size	Plates: 384	5D Images: 17,280	Planes: 69,120	Average Image Dimension (XYZCT): 996 x 996 x 1 x 4 x 1	Total Tb: 							
+Screen Example Images												
+Screen Imaging Method	spinning disk confocal microscopy											
+Screen Imaging Method Term Source REF	Fbbi											
+Screen Imaging Method Term Accession	FBbi_00000253											
+Screen Technology Type	compound screen											
+Screen Technology Type Term Source REF	EFO											
+Screen Technology Type Term Accession	EFO_0007553										
+Screen Type	secondary screen											
+Screen Type Term Source REF	EFO											
+Screen Type Term Accession	EFO_0007557												
+Screen Comments												
+												
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)											
+Library File Name	idr0139-screenB-annotation											
+Library File Format	tab-delimited text											
+Library Type	compound library											
+Library Type Term Source REF	EFO											
+Library Type Term Accession	EFO_0007569												
+Library Manufacturer	AstraZeneca											
+Library Version												
+Library Experimental Conditions												
+Library Experimental Conditions Term Source REF	EFO											
+Library Experimental Conditions Term Accession												
+Quality Control Description	Wells with <5 imaged cells were excluded. Fluorescent compounds were automatically detected and excluded based on nuclear/cytoplasmic intensity/size. Wells with nuclear fascin >30% were manually reviewed to validate the presence of nuclear fascin within the population. Wells with very few cells or excessive numbers of dead (small/rounded) cells were excluded. 											
+												
+# Protocols												
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol							
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol							
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO							
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573							
+Protocol Description	Fascin was stably knocked down in HeLa cells, then mScarlet-fascin was stably re-expressed at physiological levels. mScarlet-fascin/fascin KD HeLa cells were cultured at 37°C, 5% CO2 in high-glucose DMEM supplemented with 10% FBS, 1% glutamine and 1% penicillin/streptomycin. Cells were selected and maintained using puromycin, and sub-cultured using 0.05% trypsin-EDTA in PBS. In this assay, mScarlet-fascin/fascin KD HeLa cells were transfected with the nuclear actin probe iRFP-nAC, then plated in CellCarrier Ultra 384 well plates (PerkinElmer) at a concentration of 4,400 cells/well.	24 h after transfection, 10 nM leptomycin b (positive control), vehicle control or 0.00003-30 µM  library compounds were added using an Echo liquid handler (Labcyte/Beckman Coulter). Cells were incubated for a further 24 h then fixed in 4% paraformaldehyde.	Library of biologically annotated compounds identified as hits in primary screen	Cells were stained with DAPI and Alexa Fluor 488 Phalloidin then imaged using a 20x objective on a CellVoyager CV8000 High-Content Screening System (Yokogawa). Images were analysed using Columbus (PerkinElmer) and Genedata Screener (Genedata) software.	Images were analysed using automated pipelines to define levels of nuclear fascin normalised to neutral and positive controls. The nuclear and cytoplasmic compartments were determined using Columbus software (PerkinElmer) and the intensity of mScarlet-fascin in each comparment used to determine the % of nuclear-localized fascin per cell. The mean % nuclear fascin/cell/well was then calculated and values normalised relative to neutral controls (median set to 0) and positive controls (median set to 100). Nuclear fascin was plotted as a function of compound concentration to identify AC50 values for each compound.		
+												
+												
+# Phenotypes												
+Phenotype Name	Nuclear fascin localization 	Nuclear F-actin										
+Phenotype Description	The mean % nuclear fascin/cell/well was calculated and values normalised relative to neutral controls (median set to 0) and positive controls (median set to 100)	Mean nuclear F-actin organisation										
+Phenotype Score Type	Automatic	Automatic										
+Phenotype Term Source REF	GO	CMPO										
+Phenotype Term Name	regulation of protein localization to nucleus	actin filament phenotype										
+Phenotype Term Accession	GO_1900180	CMPO_0000104										
+												
+# Raw Data Files												
+Raw Image Data Format	TIFF											
+Raw Image Organization	9x 384 well plates, 5 fields per well, 4 channels per field											
+												
+# Feature Level Data Files												
+Feature Level Data File Name												
+Feature Level Data File Description												
+Feature Level Data File Format												
+Feature Level Data Column Name												
+Feature Level Data Column Description												
+												
+#  Processed Data Files 												
+Processed Data File Name	idr0139-screenB-annotation											
+Processed Data File Format	tab-delimited text											
+Processed Data File Description	Compound response - nuclear fascin and F-actin											
+Processed Data Column Name	Plate	Well	Reagent Identifier	Gene Identifier	Gene Symbol	Score - Nuclear fascin	Score - Nuclear F-actin	In Validation Screen	Has Phenotype	Phenoptye Annotation Level	Nuclear fascin	Nuclear F-actin
+Processed Data Column Type	Plate	Well	Reagent Identifier	Gene Identifier	Gene Symbol	Data	Data	Phenotype	Phenotype	Phenotype	Phenotype	Phenotype
+Processed Data Column Annotation Level						well	well	compound response across 12 wells	compound response across 12 wells	compound response across 12 wells	compound response across 12 wells	compound response across 12 wells
+Processed Data Column Description						Nuclear fascin - normalised mean nuclear fascin/cell/well	Nuclear F-actin - normalised mean nuclear F-actin/cell/well	Selected for apoptosis screen	Valid compound response for nuclear fascin and/or F-actin	Phenotype annotation level	Active for nuclear fascin	Active for nuclear F-actin
+Processed Data Column Link To Library File	Plate_Well combination											
+												
+																								
+												
+Screen Number	3											
+Comment[IDR Screen Name]	idr0139-lawson-fascin/screenC
+Screen Sample Type	cell											
+Screen Description	To further refine the identified compounds and targets that enhanced nuclear fascin and F-actin in terms of functional importance, we performed an additional screen to detect apoptosis using a representative panel of 52 compounds that inhibited various pathways but all targeted fascin to the nucleus. Fascin KD HeLa cells expressing mScarlet or mScarlet-fascin were used for this analysis to identify fascin-dependent responses to compounds. Cells were treated with all compounds at a range of concentrations and imaged using automated high-content microscopy in the presence of a fluorescence-based caspase reporter (that fluoresced at 488nm only upon onset of apoptosis) over 72 h. Resulting data were quantified to produce apoptosis AC50 values for all compounds in both control and fascin KD cells. From these data, we identified 15 compounds that promoted apoptosis at lower concentrations in mScarlet-fascin expressing cells than in fascin KD cells. 											
+Screen Size	Plates: 384	5D Images: 27,264	Planes: 81,792	Average Image Dimension (XYZCT): Phase contrast images: 1392 x 1040 x 1 x 1 x 18; Fluorescent images: 1392 x 1040 x 1 x 2 x 18	Total Tb:							
+Screen Example Images												
+Screen Imaging Method	time lapse microscopy											
+Screen Imaging Method Term Source REF	Fbbi											
+Screen Imaging Method Term Accession	FBbi_00000249											
+Screen Technology Type	compound screen											
+Screen Technology Type Term Source REF	EFO										
+Screen Technology Type Term Accession	EFO_0007553											
+Screen Type	secondary screen											
+Screen Type Term Source REF	EFO											
+Screen Type Term Accession	EFO_0007557											
+Screen Comments	Time labels (image sequence no./time): 1) 4h, 2) 8h, 3) 12h, 4) 16h, 5) 20h, 6) 24h, 7) 28h, 8) 32h, 9) 36h, 10) 40h, 11) 44h, 12) 48h, 13) 52h, 14) 56h, 15) 60h, 16) 64h, 17) 68h, 18) 72h. Image sequences from plate 1093670859 are missing 7) 28h timepoint due to software error during acquisition. 										
+												
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)												
+Library File Name	idr0139-screenC-annotation											
+Library File Format	tab-delimited text											
+Library Type	compound library											
+Library Type Term Source REF	EFO											
+Library Type Term Accession	EFO_0007569												
+Library Manufacturer	AstraZeneca											
+Library Version												
+Library Experimental Conditions	Plates 1093670866 and 1093670873 - Fascin KD HeLa cells expressing mScarlet-fascin (WT); Plates 1093670842 and 1093670859 - Fascin KD HeLa cells expressing mScarlet (KD)											
+Library Experimental Conditions Term Source REF	EFO											
+Library Experimental Conditions Term Accession												
+Quality Control Description	Positive/negative controls											
+												
+# Protocols												
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol							
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol							
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO							
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573							
+Protocol Description	Fascin was stably knocked down in HeLa cells, then mScarlet (KD) or mScarlet-fascin (WT) was stably expressed. Cells were cultured at 37°C, 5% CO2 in high-glucose DMEM supplemented with 10% FBS, 1% glutamine and 1% penicillin/streptomycin. Cells were selected and maintained using puromycin, and sub-cultured using 0.05% trypsin-EDTA in PBS. In this assay, cells were plated in CellCarrier Ultra 384 well plates (PerkinElmer) at a concentration of 1,000 cells/well plus 2 mM CellEvent Caspase 3/7 Green detection reagent (ThermoFisher).	24 h after plating, 1 µM staurosporine (positive control), vehicle control or 0.00003-30 µM compounds were added using an Echo liquid handler (Labcyte/Beckman Coulter). Cells were imaged live every 4 h for a further 72 h using an Incucyte Zoom (Sartorius).	Biologically annotated compounds selected following compound response screen.	Cells were incubated in an IncuCyte Zoom (Sartorius) at 37°C and imaged at 10x every 4 h for 72 h (first image taken 4 h after adding drugs). Channels = Phase contrast (cells), red (mScarlet) and green (CellEvent apoptosis marker). Data were analysed using IncuCyte Zoom (Sartorius) and Genedata Screener (Genedata) software.	Images were acquired every 4 h and apoptosis levels calculated for each condition as the area under the curve over the total period of the experiment. 							
+												
+												
+# Phenotypes												
+Phenotype Name	Apoptosis											
+Phenotype Description	Apoptosis levels calculated for each condition as the area under the curve over the total period of the experiment relative to the total number of cells. 											
+Phenotype Score Type	Automatic											
+Phenotype Term Source REF	CMPO											
+Phenotype Term Name	cell apoptosis phenotype											
+Phenotype Term Accession	CMPO_0000220											
+												
+# Raw Data Files												
+Raw Image Data Format	TIFF											
+Raw Image Organization	Phase contrast images: 4x 384 well plates, 1 field per well, 1 channel per field, 18 timepoints; Fluorescent images: 4x 384 well plates, 1 field per well, 2 channels per field, 18 timepoints.											
+												
+# Feature Level Data Files												
+Feature Level Data File Name												
+Feature Level Data File Description												
+Feature Level Data File Format												
+Feature Level Data Column Name												
+Feature Level Data Column Description												
+												
+#  Processed Data Files 												
+Processed Data File Name	idr0139-screenC-annotation										
+Processed Data File Format	tab-delimited text											
+Processed Data File Description	Apoptosis data											
+Processed Data Column Name	Plate	Well	Reagent Identifier	Gene Identifier	Gene Symbol	Score						
+Processed Data Column Type	Plate	Well	Reagent Identifier	Gene Identifier	Gene Symbol	Data						
+Processed Data Column Annotation Level						well						
+Processed Data Column Description						Apoptosis levels expressed as ratio of total cell confluence						
+Processed Data Column Link To Library File	Plate_Well combination											
+										

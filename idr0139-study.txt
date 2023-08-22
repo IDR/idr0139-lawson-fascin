@@ -37,7 +37,7 @@ Study License	CC BY 4.0
 Study License URL	https://creativecommons.org/licenses/by/4.0/												
 Study Copyright	Lawson et al											
 Study Data Publisher	University of Dundee											
-Study Data DOI												
+Study Data DOI	https://doi.org/10.17867/10000190												
 												
 Term Source Name	NCBITaxon	EFO	CMPO	Fbbi								
 Term Source File	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/								
@@ -49,6 +49,7 @@ Term Source File	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http:
 												
 Screen Number	1											
 Comment[IDR Screen Name]	idr0139-lawson-fascin/screenA	
+Screen Data DOI	https://doi.org/10.17867/10000190a
 Screen Sample Type	cell										
 Screen Description	To explore the pathways controlling nuclear fascin, we performed unbiased, imaging-based high-content phenotypic screening using fascin KD cells expressing mScarlet-fascin and the nuclear F-actin probe iRFP-nAC. Cells were treated with a library of ~13,000 annotated compounds, targeting multiple signalling pathways, at a single concentration (5 µm) or neutral or positive (leptomycin B) controls for 24 h, followed by fixation and imaging using high content spinning disk confocal microscopy. Resulting data were analysed using automated pipelines to define levels of nuclear fascin normalised to neutral and positive controls. The mean RZÕ of the neutral and positive controls in this screen was 0.5017, indicating excellent assay robustness. This approach identified compounds with a range of activities including those that increased or decreased nuclear fascin relative to the neutral controls. We chose to focus on those that increased nuclear fascin and identified hits based on a minimum threshold value of 30% of the neutral controls, equivalent to 3x the standard deviation of the neutral controls. Following quality control checks (e.g., to exclude images with very few cells), 231 compounds were identified as hits.											
 Screen Size	Plates: 384	5D Images: 61,600	Planes: 246,400	Average Image Dimension (XYZCT): 996 x 996 x 1 x 4 x 1	Total Tb: 							
@@ -117,6 +118,7 @@ Processed Data Column Link To Library File	Plate_Well combination
 												
 Screen Number	2											
 Comment[IDR Screen Name]	idr0139-lawson-fascin/screenB
+Screen Data DOI	https://doi.org/10.17867/10000190b
 Screen Sample Type	cell											
 Screen Description	Compound response screen. 231 compounds identified as hits in primary screen were added to fascin KD cells expressing mScarlet-fascin and the nuclear F-actin probe iRFP-nAC, at 12 different concentrations. Assay conditions were otherwise identical to the primary screen. The mean RZÕ of the neutral and positive controls in this screen was 0.5607, indicating excellent assay robustness. Nuclear fascin and nuclear F-actin were plotted as a function of compound concentration to identify AC50 values for each compound. This compound response analysis identified 96 compounds that were active against nuclear fascin, of which 43 also increased nuclear F-actin.											
 Screen Size	Plates: 384	5D Images: 17,280	Planes: 69,120	Average Image Dimension (XYZCT): 996 x 996 x 1 x 4 x 1	Total Tb: 							
@@ -186,6 +188,7 @@ Processed Data Column Link To Library File	Plate_Well combination
 												
 Screen Number	3											
 Comment[IDR Screen Name]	idr0139-lawson-fascin/screenC
+Screen Data DOI	https://doi.org/10.17867/10000190c
 Screen Sample Type	cell											
 Screen Description	To further refine the identified compounds and targets that enhanced nuclear fascin and F-actin in terms of functional importance, we performed an additional screen to detect apoptosis using a representative panel of 52 compounds that inhibited various pathways but all targeted fascin to the nucleus. Fascin KD HeLa cells expressing mScarlet or mScarlet-fascin were used for this analysis to identify fascin-dependent responses to compounds. Cells were treated with all compounds at a range of concentrations and imaged using automated high-content microscopy in the presence of a fluorescence-based caspase reporter (that fluoresced at 488nm only upon onset of apoptosis) over 72 h. Resulting data were quantified to produce apoptosis AC50 values for all compounds in both control and fascin KD cells. From these data, we identified 15 compounds that promoted apoptosis at lower concentrations in mScarlet-fascin expressing cells than in fascin KD cells. 											
 Screen Size	Plates: 384	5D Images: 27,264	Planes: 81,792	Average Image Dimension (XYZCT): Phase contrast images: 1392 x 1040 x 1 x 1 x 18; Fluorescent images: 1392 x 1040 x 1 x 2 x 18	Total Tb:							
